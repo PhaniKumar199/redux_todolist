@@ -1,0 +1,148 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+  }
+  
+  /* Themes */
+  .dark-theme {
+    background-color: #1e1e2f;
+    color: #ffffff;
+  }
+  .light-theme {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #6200ea;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  header button {
+    background-color: #ffffff;
+    color: #6200ea;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  header button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+  
+  form input {
+    flex: 1;
+    max-width: 400px;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  form button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #4500b5;
+  }
+  
+  /* Todo list */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+   color: #e5d335;
+   font-weight: bold;
+    
+      
+  }
+  
+  li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  li span {
+    flex: 1;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  li button {
+    background-color: #e53935;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  li button:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    form {
+      flex-direction: column;
+    }
+  
+    form input {
+      margin: 0 0 0.5rem 0;
+    }
+  }
+  
