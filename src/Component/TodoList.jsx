@@ -3,25 +3,25 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './index.css';
 
-// Action types
+
 const TOGGLE_THEME = 'TOGGLE_THEME';
 const ADD_TODO = 'ADD_TODO';
 const REMOVE_TODO = 'REMOVE_TODO';
 const TOGGLE_TODO = 'TOGGLE_TODO';
 
-// Action creators
+
 const toggleTheme = () => ({ type: TOGGLE_THEME });
 const addTodo = (text) => ({ type: ADD_TODO, payload: text });
 const removeTodo = (id) => ({ type: REMOVE_TODO, payload: id });
 const toggleTodo = (id) => ({ type: TOGGLE_TODO, payload: id });
 
-// Initial state
+
 const initialState = {
   theme: { isDarkMode: false },
   todos: [],
 };
 
-// Reducer
+
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_THEME:
@@ -56,7 +56,7 @@ const rootReducer = (state = initialState, action) => {
   }
 };
 
-// App component
+
 const TodoList = () => {
   const dispatch = useDispatch();
   const isDarkMode = useSelector((state) => state.theme.isDarkMode);
